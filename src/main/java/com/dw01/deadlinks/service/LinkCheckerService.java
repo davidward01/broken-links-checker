@@ -16,6 +16,8 @@ import java.util.List;
 public class LinkCheckerService {
 
     public List<LinkStatus> checkLinks(String input) throws IOException {
+        System.out.println("Checking links for URL: " + input);
+
         List<String> urls = new ArrayList<>();
 
         if (UrlValidator.getInstance().isValid(input)) {
